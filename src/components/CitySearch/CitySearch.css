@@ -1,0 +1,116 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Search Container */
+.search-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Input Styles */
+.search-input {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(240, 166, 166, 0.2);
+  background-color: #2d2d2d;
+}
+
+.search-input::placeholder {
+  color: #8e8e8e;
+}
+
+/* Autocomplete List Styles */
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 9999;
+  display: none;
+}
+
+.autocomplete-list.active {
+  display: block;
+}
+
+.autocomplete-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.autocomplete-item:hover {
+  background-color: #2d2d2d;
+}
+
+.autocomplete-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+/* Custom scrollbar */
+.autocomplete-list::-webkit-scrollbar {
+  width: 8px;
+}
+.autocomplete-list::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 0 0 8px 0;
+}
+.autocomplete-list::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+.autocomplete-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Weather display area */
+.weather-container {
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+  /* No modificaciones necesarias aquí, sólo asegúrate de que el contenedor esté vacío o no sobrescriba flex */
+}
+
+.weather-container .weather-card {
+  /* Asegúrate de que el WeatherCard tenga la propiedad display: flex; desde React */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

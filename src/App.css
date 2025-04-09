@@ -1,0 +1,50 @@
+#root {
+  max-width: 100%; /* O eliminar esta propiedad */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Elimina o ajusta .card */
+.card {
+  padding: 2em;
+  /* Ajusta el padding si afecta a las tarjetas */
+}
+
+/* Si no usas .logo o sus reglas, podrías eliminar estas */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.weather-title {
+  font-size: 1.5rem; /* text-2xl en Tailwind es 1.5rem */
+  font-weight: bold; /* font-bold */
+  text-align: center; /* text-center */
+  padding: 1rem; /* p-4 */
+}
