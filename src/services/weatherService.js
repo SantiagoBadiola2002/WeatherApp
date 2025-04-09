@@ -1,12 +1,9 @@
 import { useState, useEffect } from 'react'
 
-const API_KEY = "47eafde3dbc94afb8fa01924250904"; // Clave de API proporcionada por AccuWeather, hay que logearse
+const API_KEY = ""; // Clave de API proporcionada por AccuWeather, hay que logearse
 const BASE_URL = "http://api.weatherapi.com/v1/search.json";
 
 //Servicio de autocompletado al buscar la ciudad por su nombre
-//Parametros: apikey (required), q (required) y language (opcional)
-//Ejemplo: http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=SMl7FEiGOeFeK7xTdrcSLgGyu4myL6T1&q=piriap
-
 export function useCityAutocomplete(query) {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -53,8 +50,6 @@ export function useCityAutocomplete(query) {
 }
 
 //Servicio que usa el nombre de la ciudad para encontrar su locationKey y dar el clima  
-//Parametros: apikey (required) y locationKey (required)
-//Ejemplo: http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/348633?apikey=SMl7FEiGOeFeK7xTdrcSLgGyu4myL6T1
 export const useCityWeather = (cityName) => {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);

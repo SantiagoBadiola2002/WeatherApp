@@ -1,12 +1,43 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación del clima desarrollada con **React** + **Vite** que permite buscar ciudades con autocompletado y muestra la proyección del clima de forma clara y amigable.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Características
 
-## Expanding the ESLint configuration
+- 🔍 **Buscador con Autocompletado**: Encuentra ciudades fácilmente gracias a la búsqueda inteligente.
+- 🌦️ **Pronóstico del Clima**: Visualiza la proyección del clima actual y futura.
+- ⚡ **Rápido y Ligero**: Gracias a Vite, la aplicación carga súper rápido.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Capturas de pantalla
+
+### Búsqueda con autocompletado
+![Búsqueda con autocompletado](./screenshots/search-autocomplete.png)
+
+### Pronóstico extendido
+![Pronóstico extendido](./screenshots/forecast.png)
+
+## 🛠️ Tecnologías utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [API del clima](https://www.weatherapi.com) <!-- Reemplaza si usás otra -->
+
+## ⚙️ Instalación y ejecución local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/SantiagoBadiola2002/WeatherApp
+
+# Ingresar al directorio del proyecto
+cd ClimaApp
+
+# Instalar las dependencias
+npm install
+
+# Ejecutar la aplicación en entorno de desarrollo
+npm run dev
+
+🔑 Configuración de API
+Asegúrate de tener una API Key válida en Weather Api y colócala en el archivo weatherService.js
+-> const API_KEY = ""; // Clave de API proporcionada por Weather Api, hay que logearse

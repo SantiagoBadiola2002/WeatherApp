@@ -29,7 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background-image: url('./src/images/wallpaper.jpg');
+  background-image: url('/images/wallpaper.jpg');
   background-size: cover;  /* Para que la imagen cubra toda la pantalla */
   background-position: center;  /* Centra la imagen */
   background-repeat: no-repeat;  /* Evita que la imagen se repita */
