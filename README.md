@@ -23,6 +23,10 @@ Aplicación del clima desarrollada con **React** + **Vite** que permite buscar c
 - [Vite](https://vitejs.dev/)
 - [API del clima](https://www.weatherapi.com) <!-- Reemplaza si usás otra -->
 
+### 🔑 Configuración de API
+Asegúrate de tener una API Key válida en Weather Api y colócala en el archivo weatherService.js
+-> const API_KEY = ""; // Clave de API proporcionada por Weather Api, hay que logearse
+
 ## ⚙️ Instalación y ejecución local
 
 ```bash
@@ -38,6 +42,4 @@ npm install
 # Ejecutar la aplicación en entorno de desarrollo
 npm run dev
 
-🔑 Configuración de API
-Asegúrate de tener una API Key válida en Weather Api y colócala en el archivo weatherService.js
--> const API_KEY = ""; // Clave de API proporcionada por Weather Api, hay que logearse
+
